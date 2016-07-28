@@ -18,3 +18,11 @@ The converted model in the desired framework type. The output can be for example
     1.  Importer: we have one encoder associated to each framework model language. 
     2. Roseta Stone: It can be done in two different ways. First  method is storing the common representation is an hdf5 file at disk. This file stores all the needed parameters to rebuild the deep neural network of any other framework. The second method is not storing at disk and do all the operations in memory. 
     3. Exporter: transforms the inner data representation (hdf5) to the desired framework language model.
+    
+-Folder structure:
+  1. core: Roseta Stone, Abstract classes of importers and exporters.
+  2. io: 
+    *Config: YAML files
+    *exporters: encoder of each model
+    *importers: decoder of each model
+  3. test: test files
