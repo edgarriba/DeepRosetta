@@ -1,4 +1,5 @@
 from abc import ABCMeta, abstractmethod, abstractproperty
+import os
 
 class BaseExporter:
     """ Abstract class modeling a base importer
@@ -6,8 +7,8 @@ class BaseExporter:
     """
     __metaclass__ = ABCMeta
 
-    def __init__(self, rosetta):
-        self.rosetta = rosetta
+    def __init__(self):
+        pass
 
     @abstractmethod
     def save(self, file_path):
