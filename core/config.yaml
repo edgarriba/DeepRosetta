@@ -1,75 +1,73 @@
 layers:
-  ConvolutionLayer:
-    - weights_names
-    - biases_names
-    - dim:
+  ConvolutionLayer: # Key is the name of the layer
+    weights_name:
+    biases_name:
+    dim:
       - neurons
       - channels
       - height
       - width
-    - name
-    - padding
-    - stride
-    - bottom
-    - top
+    type: ConvolutionLayer
+    padding:
+    stride:
+    bottom:
+    top:
 
   LinearLayer:
-    - weights_names
-    - biases_names
-    - dim:
+    weights_name:
+    biases_name:
+    dim:
       - neurons
       - channels
       - height
       - width
-    - name
-    - bottom
-    - top
+    type: LinearLayer
+    bottom:
+    top:
 
   ReLULayer:
-    - name
-    - bottom
-    - top
-    - negative_slope
+    type: ReLULayer
+    bottom:
+    top:
+    negative_slope:
 
   PoolingLayer:
-    - name
-    - bottom
-    - top
-    - padding
-    - stride
-    - kernel_size
-    - pool 
+    type: PoolingLayer
+    bottom:
+    top:
+    padding:
+    stride:
+    kernel_size:
+    pool :
 
   LRNLayer:
-    - name
-    - bottom
-    - top
-    - local_size
-    - alpha
-    - beta
-    - norm_region
-    - k
+    type: LRNLayer
+    bottom:
+    top:
+    local_size:
+    alpha:
+    beta:
+    norm_region:
+    k:
 
   DropoutLayer:
-    - name
-    - bottom
-    - top
-    - dropout_ratio
+    type: DropoutLayer
+    bottom:
+    top:
+    dropout_ratio:
 
   SoftmaxLayer:
-    - name
-    - bottom
-    - top
-    - axis
+    type: SoftmaxLayer
+    bottom:
+    top:
+    axis:
 
   ConcatLayer:
-    - name
-    - bottom
-    - top
-    - axis
-    - concat_dim
+    type: ConcatLayer
+    bottom:
+    top:
+    axis:
+    concat_dim:
 
-weights:
-
-biases:
+parameters:
   

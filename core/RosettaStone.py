@@ -52,7 +52,6 @@ class RosettaStone(object):
         mod = __import__(module + '.' + klass, fromlist=[klass])
         return getattr(mod, klass)()
 
-
     def convert(self, input_file, output_file, input_format, output_format):
         """ Function that converts from one framework to a another
 
