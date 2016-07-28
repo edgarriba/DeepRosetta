@@ -1,37 +1,37 @@
 layers:
-  - ConvolutionLayer:
-      - weights
-      - biases
-      - dim:
-        - neurons
-        - channels
-        - height
-        - width
-      - name
-      - padding
-      - stride
-      - bottom
-      - top
+  ConvolutionLayer:
+    - weights
+    - biases
+    - dim:
+      - neurons
+      - channels
+      - height
+      - width
+    - name
+    - padding
+    - stride
+    - bottom
+    - top
 
-  - LinearLayer:
-      - weights
-      - biases
-      - dim:
-        - neurons
-        - channels
-        - height
-        - width
-      - name
-      - bottom
-      - top
+  LinearLayer:
+    - weights
+    - biases
+    - dim:
+      - neurons
+      - channels
+      - height
+      - width
+    - name
+    - bottom
+    - top
 
-  - ReLULayer:
-      - name
-      - bottom
-      - top
-      - negative_slope
+  ReLULayer:
+    - name
+    - bottom
+    - top
+    - negative_slope
 
-  - PoolingLayer:
+  PoolingLayer:
     - name
     - bottom
     - top
@@ -40,7 +40,7 @@ layers:
     - kernel_size
     - pool 
 
-  - LRNLayer:
+  LRNLayer:
     - name
     - bottom
     - top
@@ -50,14 +50,21 @@ layers:
     - norm_region
     - k
 
-  - DropoutLayer:
+  DropoutLayer:
     - name
     - bottom
     - top
     - dropout_ratio
 
-  - SoftmaxLayer:
+  SoftmaxLayer:
     - name
     - bottom
     - top
     - axis
+
+  ConcatLayer:
+    - name
+    - bottom
+    - top
+    - axis
+    - concat_dim
