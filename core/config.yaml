@@ -1,0 +1,10 @@
+layers:
+  - conv:
+      - weights
+      - biases
+      - dim:
+        - neurons
+        - channels
+        - height
+        - width
+      - name
