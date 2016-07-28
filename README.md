@@ -33,4 +33,6 @@ The converted model in the desired framework type. The output can be for example
     * Exporters: encoder of each model
     * Importers: decoder of each model
   3. test: test files
+
+- General Schema:
 ![Alt text](RosettaStone.png?raw=true "Optional Title")
