@@ -11,14 +11,14 @@ class RosettaStone(object):
 
     def list_importers(self):
         importers = []
-        for d in os.listidr('importers'):
+        for d in os.listdir('../modules/importers'):
             if 'Importer' in d:
                 importers.append(d)
         return importers
 
     def list_exporters(self):
         exporters = []
-        for d in os.listidr('exporters'):
+        for d in os.listdir('../modules/exporters'):
             if 'Exporter' in d:
                 exporters.append(d)
         return exporters
