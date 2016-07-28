@@ -2,10 +2,7 @@ import argparse
 
 
 class BaseParser:
-        
-               
-
-                
+        '''parse the line command of the system'''
         def parse(self):
             parser = argparse.ArgumentParser(description='Convert deep learning model.')
 
