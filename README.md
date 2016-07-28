@@ -2,6 +2,7 @@
 
 [![Join the chat at https://gitter.im/edgarriba/DeepRosetta](https://badges.gitter.im/edgarriba/DeepRosetta.svg)](https://gitter.im/edgarriba/DeepRosetta?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 [![Build Status](https://travis-ci.org/edgarriba/DeepRosetta.svg?branch=master)](https://travis-ci.org/edgarriba/DeepRosetta)
+[![License](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)  
 
 An universal deep learning models conversor :shipit:
 
@@ -34,4 +35,4 @@ The converted model in the desired framework type. The output can be for example
   3. test: test files
 
 - General Schema:
-->![Alt text](RosettaStone.png?raw=true "Deep Rosetta architecture")<-
+![Alt text](RosettaStone.png?raw=true "Deep Rosetta architecture")
