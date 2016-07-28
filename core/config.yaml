@@ -1,7 +1,7 @@
 layers:
   ConvolutionLayer:
-    - weights
-    - biases
+    - weights_names
+    - biases_names
     - dim:
       - neurons
       - channels
@@ -14,8 +14,8 @@ layers:
     - top
 
   LinearLayer:
-    - weights
-    - biases
+    - weights_names
+    - biases_names
     - dim:
       - neurons
       - channels
@@ -68,3 +68,8 @@ layers:
     - top
     - axis
     - concat_dim
+
+weights:
+
+biases:
+  
