@@ -20,8 +20,6 @@ layers:
     dim:
       - neurons
       - channels
-      - height
-      - width
     type: LinearLayer
     bottom:
     top:
@@ -31,6 +29,16 @@ layers:
     bottom:
     top:
     negative_slope:
+
+  TanHLayer:
+    type: TanHLayer
+    bottom:
+    top:
+
+  SigmoidLayer:
+    type: SigmoidLayer
+    bottom:
+    top:
 
   PoolingLayer:
     type: PoolingLayer
