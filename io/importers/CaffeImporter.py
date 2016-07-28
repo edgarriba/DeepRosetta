@@ -1,7 +1,9 @@
 import sys
 import os
 sys.path.insert(0, '../../')
+
 from core.BaseImporter import BaseImporter
+from core.RosettaStone import RosettaStone
 
 class CaffeImporter(BaseImporter):
     """ Class modeling a Caffe importer
