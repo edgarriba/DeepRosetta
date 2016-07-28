@@ -1,7 +1,7 @@
 import unittest
 
 from core.RosettaStone import RosettaStone
-from io.importers.CaffeImporter import CaffeImporter
+from io.importers.CaffeFileImporter import CaffeImporter
 
 class MyTest(unittest.TestCase):
     def test_rosetta(self):
