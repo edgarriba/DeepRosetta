@@ -14,7 +14,7 @@ layers:
       - top
 
   - LinearLayer:
-     - weights
+      - weights
       - biases
       - dim:
         - neurons
@@ -24,3 +24,40 @@ layers:
       - name
       - bottom
       - top
+
+  - ReLULayer:
+      - name
+      - bottom
+      - top
+      - negative_slope
+
+  - PoolingLayer:
+    - name
+    - bottom
+    - top
+    - padding
+    - stride
+    - kernel_size
+    - pool 
+
+  - LRNLayer:
+    - name
+    - bottom
+    - top
+    - local_size
+    - alpha
+    - beta
+    - norm_region
+    - k
+
+  - DropoutLayer:
+    - name
+    - bottom
+    - top
+    - dropout_ratio
+
+  - SoftmaxLayer:
+    - name
+    - bottom
+    - top
+    - axis
