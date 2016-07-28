@@ -1,0 +1,72 @@
+# Matconvnet equivalences to Rosetta
+layers:
+  ConvolutionLayer: # Key is the name of the layer
+    weights_name: weights
+    biases_name: weights
+    dim:
+      - neurons
+      - channels
+      - height
+      - width
+    type: conv
+    padding: pad
+    stride: stride
+    bottom:
+    top:
+
+  LinearLayer:
+    weights_name: weights
+    biases_name: weights
+    dim:
+      - neurons
+      - channels
+    type: fc # workaround
+    bottom:
+    top:
+
+  ReLULayer:
+    type: relu
+    bottom:
+    top:
+    negative_slope: 0
+
+  PoolingLayer:
+    type: pool
+    bottom:
+    top:
+    padding: pad
+    stride: stride
+    kernel_size: pool
+    pool : method
+
+  LRNLayer:
+    type: lrn
+    bottom:
+    top:
+    local_size:
+    alpha:
+    beta:
+    norm_region: ACCROSS_CHANNELS
+    k:
+
+  DropoutLayer:
+    type: dropout
+    bottom:
+    top:
+    dropout_ratio: ratio
+
+  SoftmaxLayer:
+    type: softmax
+    bottom:
+    top:
+    axis: 2
+
+  ConcatLayer:
+    type: ConcatLayer
+    bottom:
+    top:
+    axis:
+    concat_dim:
+
+parameters:
+
