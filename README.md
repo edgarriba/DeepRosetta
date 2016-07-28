@@ -1,4 +1,9 @@
 # DeepRosetta
+
+| **Linux** |
+|-----------|
+|[![Build Status](https://travis-ci.org/edgarriba/DeepRosetta.svg?branch=master)](https://travis-ci.org/edgarriba/DeepRosetta)|
+
 An universal deep learning models conversor:
 
 The general idea of this project is to convert any deep learning framework model to an other.
