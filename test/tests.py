@@ -1,4 +1,6 @@
 import unittest
+import sys
+sys.path.insert(0, '../')
 
 from core.RosettaStone import RosettaStone
 from io.importers.CaffeImporter import CaffeImporter
