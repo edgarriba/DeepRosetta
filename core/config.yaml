@@ -8,3 +8,7 @@ layers:
         - height
         - width
       - name
+      - padding
+      - stride
+      - bottom
+      - top
