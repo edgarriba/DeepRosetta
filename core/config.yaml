@@ -14,7 +14,7 @@ layers:
       - top
 
   - LinearLayer:
-     - weights
+      - weights
       - biases
       - dim:
         - neurons
