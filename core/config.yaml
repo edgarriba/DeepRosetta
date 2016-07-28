@@ -40,6 +40,16 @@ layers:
     bottom:
     top:
 
+  InputLayer:
+    type: InputLayer
+    bottom:
+    top:
+    dim:
+      - neurons
+      - channels
+      - height
+      - width
+
   PoolingLayer:
     type: PoolingLayer
     bottom:
