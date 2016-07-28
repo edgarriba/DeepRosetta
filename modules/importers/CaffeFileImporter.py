@@ -3,7 +3,7 @@ sys.path.insert(0, '../../')
 
 from core.BaseImporter import BaseImporter
 
-class CaffeImporter(BaseImporter):
+class Importer(BaseImporter):
     """ Class modeling a Caffe importer
 
     """
