@@ -3,3 +3,6 @@ python:
   - "2.7"
 
 script: python test/tests.py
+
+notifications:
+  email: false
