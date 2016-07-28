@@ -1,6 +1,3 @@
-import sys
-sys.path.insert(0, '../../')
-
 from core.BaseImporter import BaseImporter
 from modules.config.caffe import caffe_pb2 as caffe_pb2
 from modules.config.caffe.layers import *
@@ -19,7 +16,7 @@ def blobproto_to_array(blob):
         dims = [blob.num, blob.channels, blob.height, blob.width]
     return np.array(blob.data,dtype='float32').reshape(dims)
 
-class Importer(BaseImporter):
+class CaffeImporter(BaseImporter):
     """ Class modeling a Caffe importer
 
     """
