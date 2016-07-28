@@ -3,7 +3,7 @@ import sys
 sys.path.insert(0, '../')
 
 from core.RosettaStone import RosettaStone
-from io.importers.CaffeFileImporter import CaffeImporter
+from modules.importers.CaffeFileImporter import CaffeImporter
 
 class MyTest(unittest.TestCase):
     def test_rosetta(self):

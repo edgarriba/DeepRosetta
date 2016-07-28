@@ -26,9 +26,9 @@ class RosettaStone(object):
     def convert(self, input, output, input_format='', output_format=''):
         assert(input_format in self.importers)
         assert(output_format in self.exporters)
-        Importer = import_module(os.path.join('io','importers',input_format))
-        Exporter = import_module(os.path.join('io', 'exporters', export_format))
-        Exporter.save(Importer.load(input), output)
+        importer = import_module("modules.importers.%s" %input_format).Importer()
+        exporter = import_module("modules.exporters.%s" %output_format).Importer()
+        exporter.save(importer.load(input), output)
 
 
 
