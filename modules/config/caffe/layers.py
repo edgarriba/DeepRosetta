@@ -1,0 +1,42 @@
+# Adapted from https://github.com/vlfeat/matconvnet/blob/master/utils/layers.py by Andrea Vedaldi
+
+# Recent Caffes just pass a string as a type; this is used for legacy support
+layers_type = {}
+layers_type[0]  = 'none'
+layers_type[1]  = 'accuracy'
+layers_type[2]  = 'bnll'
+layers_type[3]  = 'concat'
+layers_type[4]  = 'conv'
+layers_type[5]  = 'data'
+layers_type[6]  = 'dropout'
+layers_type[7]  = 'euclidean_loss'
+layers_type[8]  = 'flatten'
+layers_type[9]  = 'hdf5_data'
+layers_type[10] = 'hdf5_output'
+layers_type[28] = 'hinge_loss'
+layers_type[11] = 'im2col'
+layers_type[12] = 'image_data'
+layers_type[13] = 'infogain_loss'
+layers_type[14] = 'inner_product'
+layers_type[15] = 'lrn'
+layers_type[25] = 'eltwise'
+layers_type[29] = 'memory_data'
+layers_type[16] = 'multinomial_logistic_loss'
+layers_type[17] = 'pool'
+layers_type[26] = 'power'
+layers_type[18] = 'relu'
+layers_type[19] = 'sigmoid'
+layers_type[27] = 'sigmoid_cross_entropy_loss'
+layers_type[20] = 'softmax'
+layers_type[21] = 'softmax_loss'
+layers_type[22] = 'split'
+layers_type[23] = 'tanh'
+layers_type[24] = 'window_data'
+layers_type[39] = 'deconvolution'
+layers_type[40] = 'crop'
+
+# pooling types
+pool_methods = {}
+pool_methods[0] = 'max'
+pool_methods[1] = 'ave'
+pool_methods[2] = 'stochastic'
