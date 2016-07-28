@@ -33,4 +33,4 @@ The converted model in the desired framework type. The output can be for example
     * Exporters: encoder of each model
     * Importers: decoder of each model
   3. test: test files
-![Alt text](/relative/path/to/img.jpg?raw=true "Optional Title")
+![Alt text](RosettaStone.png?raw=true "Optional Title")
