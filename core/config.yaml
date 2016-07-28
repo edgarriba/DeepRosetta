@@ -1,3 +1,4 @@
+# Rosetta structure
 layers:
   ConvolutionLayer: # Key is the name of the layer
     weights_name:
