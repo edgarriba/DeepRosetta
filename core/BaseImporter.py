@@ -1,5 +1,4 @@
 from abc import ABCMeta, abstractmethod, abstractproperty
-import RosettaStone
 
 class BaseImporter:
     """ Abstract class modeling a base importer
@@ -8,7 +7,7 @@ class BaseImporter:
     __metaclass__ = ABCMeta
 
     def __init__(self):
-        self.rosetta = RosettaStone()
+        pass
 
     @abstractmethod
     def load(self, file_path):
@@ -17,4 +16,4 @@ class BaseImporter:
 
         :param file_path: path to the model file
         """
-        pass
+        return NotImplementedError
