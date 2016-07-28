@@ -3,10 +3,10 @@ layers:
     weights_names:
     biases_names:
     dim:
-      neurons:
-      channels:
-      height:
-      width:
+      - neurons
+      - channels
+      - height
+      - width
     name:
     padding:
     stride:
@@ -17,10 +17,10 @@ layers:
     weights_names:
     biases_names:
     dim:
-      neurons:
-      channels:
-      height:
-      width:
+      - neurons
+      - channels
+      - height
+      - width
     name:
     bottom:
     top:
@@ -38,7 +38,7 @@ layers:
     padding:
     stride:
     kernel_size:
-    pool:
+    pool :
 
   LRNLayer:
     name:
@@ -69,5 +69,7 @@ layers:
     axis:
     concat_dim:
 
-parameters:
+weights:
+
+biases:
   
