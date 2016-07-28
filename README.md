@@ -35,6 +35,4 @@ The converted model in the desired framework type. The output can be for example
   3. test: test files
 
 - General Schema:
-<p align="center">
-  <[Alt text](RosettaStone.png?raw=true "Deep Rosetta architecture")/>
-</p>!
+align="center" [Alt text](RosettaStone.png?raw=true "Deep Rosetta architecture")!
