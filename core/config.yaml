@@ -1,5 +1,5 @@
 layers:
-  - conv:
+  - ConvolutionLayer:
       - weights
       - biases
       - dim:
@@ -10,5 +10,17 @@ layers:
       - name
       - padding
       - stride
+      - bottom
+      - top
+
+  - LinearLayer:
+     - weights
+      - biases
+      - dim:
+        - neurons
+        - channels
+        - height
+        - width
+      - name
       - bottom
       - top
