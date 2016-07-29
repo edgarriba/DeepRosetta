@@ -1,4 +1,4 @@
-# Matconvnet equivalences to Rosetta
+# Tensorflow equivalences to Rosetta
 layers:
   InputLayer: # Key is the name of the layer
     type: Placeholder
