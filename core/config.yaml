@@ -105,5 +105,13 @@ layers:
     axis:
     concat_dim:
 
+  InputLayer: 
+    type: InputLayer
+    dim:
+      - channels
+      - height
+      - width
+    top:
+
 parameters:
   
