@@ -50,6 +50,11 @@ layers:
       - height
       - width
 
+  DummyLayer:
+    type: DummyLayer
+    bottom:
+    top:
+
   PoolingLayer:
     type: PoolingLayer
     bottom:

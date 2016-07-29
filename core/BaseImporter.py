@@ -17,3 +17,13 @@ class BaseImporter:
         :param file_path: path to the model file
         """
         return NotImplementedError
+
+    @abstractmethod
+    def loadFromObject(self, frameworkObj):
+        """ Converts a network object of a framework to a dictionary 
+            in the roseta representation. This method should only be 
+            implemeted for frameworks that operate in python
+            
+            :param frameworkObj: a python object containing a trained network
+        """
+        return NotImplementedError
