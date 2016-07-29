@@ -10,7 +10,13 @@ layers:
       - width
     type: ConvolutionLayer
     padding:
+      - top
+      - bottom
+      - left
+      - right
     stride:
+      - vertical
+      - horizontal
     bottom:
     top:
 
@@ -60,7 +66,13 @@ layers:
     bottom:
     top:
     padding:
+      - top
+      - bottom
+      - left
+      - right
     stride:
+      - vertical
+      - horizontal
     kernel_size:
     pool :
 
