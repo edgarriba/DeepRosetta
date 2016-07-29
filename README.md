@@ -1,4 +1,4 @@
-# DeepRosetta
+![Alt text](docs/Head-logo_V1.png?raw=true "Deep Rosetta logo")
 
 [![Join the chat at https://gitter.im/edgarriba/DeepRosetta](https://badges.gitter.im/edgarriba/DeepRosetta.svg)](https://gitter.im/edgarriba/DeepRosetta?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 [![Build Status](https://travis-ci.org/edgarriba/DeepRosetta.svg?branch=master)](https://travis-ci.org/edgarriba/DeepRosetta)
