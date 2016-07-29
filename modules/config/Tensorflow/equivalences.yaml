@@ -1,0 +1,81 @@
+# Tensorflow equivalences to Rosetta
+layers:
+  InputLayer: # Key is the name of the layer
+    type: Placeholder
+    dim:
+      - channels
+      - height
+      - width
+    top:
+
+  ConvolutionLayer: # Key is the name of the layer
+    type: Conv2D
+    weights_name: weights
+    biases_name: biases
+    dim:
+      - neurons
+      - channels
+      - height
+      - width
+    padding: pad
+    stride: stride
+    bottom:
+    top:
+
+  LinearLayer:
+    type: MatMul # TODO check if always
+    weights_name: weights
+    biases_name: biases
+    dim:
+      - neurons
+      - channels
+    bottom:
+    top:
+
+  ReLULayer:
+    type: Relu
+    bottom:
+    top:
+    negative_slope: 0
+
+  PoolingLayer:
+    type: MaxPool
+#    type_alt1: AvgPool # TODO: to handle several tf layer types in one target layer type?
+    bottom:
+    top:
+    padding: pad
+    stride: stride
+    kernel_size: pool
+    pool : method
+
+#  LRNLayer:
+#    type: lrn
+#    bottom:
+#    top:
+#    local_size:
+#    alpha:
+#    beta:
+#    norm_region: ACCROSS_CHANNELS
+#    k:
+
+#  DropoutLayer:
+#    type: dropout
+#    bottom:
+#    top:
+#    dropout_ratio: ratio
+
+  SoftmaxLayer:
+    type: Softmax
+    bottom:
+    top:
+    axis: 2
+
+#  ConcatLayer:
+#    type: ConcatLayer
+#    bottom:
+#    top:
+#    axis:
+#    concat_dim:
+
+parameters:
+
