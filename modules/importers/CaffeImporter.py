@@ -65,10 +65,10 @@ class CaffeImporter(BaseImporter):
                 print('\tweights: %i,%i,%i,%i' % blobproto_to_array(layer.blobs[0]).shape)
                 print('\tbiases: %i,%i,%i,%i' % blobproto_to_array(layer.blobs[1]).shape)
                 print('')
-            elif layer_type in ['dropout', 'DROPOUT']:
+            elif layer_type in ['dropout', 'Dropout']:
                 print('\tdropout_ratio: %s' % layer.dropout_param.dropout_ratio)
                 print('')
-            elif layer_type in ['softmax_loss', 'SOFTMAX']:
+            elif layer_type in ['softmax_loss', 'SoftmaxLoss']:
                 print('\taxis: %s' % layer.softmax_param.axis)
                 print('')
 
