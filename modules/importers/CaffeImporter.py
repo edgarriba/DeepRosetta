@@ -11,3 +11,5 @@ class CaffeImporter(BaseImporter):
         print 'Loading Caffe model: %s' % file_path
         return {}
 
+    def loadFromObject(self, frameworkObj):
+        return NotImplementedError
