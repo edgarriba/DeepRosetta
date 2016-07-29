@@ -11,9 +11,16 @@ Each deep learning framework has its ows structure representation defined by its
 
 General Usage
 -------------
+You can convert from one framework to another
 
-
-
+    import RosettaStone
+    
+    if __name__ == '__main__':
+        rosetta = RosettaStone()
+        rosetta.convert('my.caffemodel', 'my.mat', 'CaffeImporter', 'MatConvnetImporter')
+        
+        print 'All went OK!'
+  
 Supported formats
 -----------------
 
