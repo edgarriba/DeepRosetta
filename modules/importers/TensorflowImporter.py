@@ -13,7 +13,7 @@ except:
     pass
 
 
-class Importer(BaseImporter):
+class TensorflowImporter(BaseImporter):
     """ Class modeling a Tensorflow importer
     """
     def __init__(self):
@@ -218,6 +218,6 @@ class Importer(BaseImporter):
         return NotImplementedError
 
 if __name__=='__main__':
-    importer = Importer()
+    importer = TensorflowImporter()
     out_model = importer.load('/home/lluis/tensorflow_in_out/mnist/mnist_conv.pb')
     pass
