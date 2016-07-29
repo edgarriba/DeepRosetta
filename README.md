@@ -23,7 +23,23 @@ You can convert from one framework to another
   
 Supported formats
 -----------------
+- Importers
+  - [ ] CaffeImporter
+  - [x] MatConvnetImporter
+  - [x] KerasImporter
+  - [ ] TorchImporter
+  - [ ] TensorflowImporter
+  - [ ] ChainerImporter
+  - [ ] TinyCNNImporter
 
+- Exporters
+  - [ ] CaffeExporter
+  - [ ] MatConvnetExporter
+  - [x] KerasExporter
+  - [ ] TorcExporter
+  - [ ] TensorflowExporter
+  - [ ] ChainerExporter
+  - [ ] TinyCNNExporter
 
 Contributing
 ------------
