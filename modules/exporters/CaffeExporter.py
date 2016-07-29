@@ -10,4 +10,6 @@ class CaffeExporter(BaseExporter):
     def save(self, file_path):
         print 'Saving Caffe model: %s' % file_path
         return {}
-
+    
+    def toObject(self, rosetaDict):
+        raise NotImplementedError

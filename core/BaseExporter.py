@@ -17,4 +17,13 @@ class BaseExporter:
 
         :param file_path: path to the model file
         """
-        pass
+        raise NotImplementedError
+
+    @abstractmethod
+    def toObject(self, rosetaDict):
+        """Generates a python object with a trained network from a
+           dictionary in the rosetaFormat.
+
+        :param rosetaDict: the roseta dictionary
+        """
+        raise NotImplementedError

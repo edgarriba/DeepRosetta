@@ -10,7 +10,13 @@ layers:
       - width
     type: ConvolutionLayer
     padding:
+      - top
+      - bottom
+      - left
+      - right
     stride:
+      - vertical
+      - horizontal
     bottom:
     top:
 
@@ -50,12 +56,23 @@ layers:
       - height
       - width
 
+  DummyLayer:
+    type: DummyLayer
+    bottom:
+    top:
+
   PoolingLayer:
     type: PoolingLayer
     bottom:
     top:
     padding:
+      - top
+      - bottom
+      - left
+      - right
     stride:
+      - vertical
+      - horizontal
     kernel_size:
     pool :
 

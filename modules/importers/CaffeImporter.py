@@ -176,6 +176,9 @@ class CaffeImporter(BaseImporter):
 
         return {}
 
+    def loadFromObject(self, frameworkObj):
+        return NotImplementedError
+
 if __name__ == '__main__':
     importer = CaffeImporter()
     file_path = '/home/guillem/git/caffe/models/bvlc_alexnet/bvlc_alexnet.caffemodel'
