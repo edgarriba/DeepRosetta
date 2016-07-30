@@ -17,25 +17,25 @@ You can convert from one framework to another
     
     if __name__ == '__main__':
         rosetta = RosettaStone()
-        rosetta.convert('my.caffemodel', 'my.mat', 'CaffeImporter', 'MatConvnetImporter')
+        rosetta.convert('my.caffemodel', 'my.mat', 'CaffeImporter', 'MatConvnetExporter')
         
         print 'All went OK!'
   
 Supported formats
 -----------------
 - Importers
-  - [ ] CaffeImporter
+  - [x] CaffeImporter
   - [x] MatConvnetImporter
-  - [x] KerasImporter
+  - [x] LasagneImporter
   - [ ] TorchImporter
-  - [ ] TensorflowImporter
+  - [x] TensorflowImporter
   - [ ] ChainerImporter
   - [ ] TinyCNNImporter
 
 - Exporters
   - [ ] CaffeExporter
   - [ ] MatConvnetExporter
-  - [x] KerasExporter
+  - [x] LasagneExporter
   - [ ] TorcExporter
   - [ ] TensorflowExporter
   - [ ] ChainerExporter
