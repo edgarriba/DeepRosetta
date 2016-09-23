@@ -6,8 +6,8 @@
 
 An universal deep learning models conversor :shipit:
 
-The general idea of this project is to convert any deep learning framework model to an other.
-Each deep learning framework has its ows structure representation defined by its layers, parameters and syntax. Thsi structure representation makes difficult to swap from one framework to another. This project tries to solve this problem in a straightforward manner, making it simple for the non-experienced users. This project fills this gap using an inner representation which be the bridge between all deep learning frameworks.
+The general idea of this project is to convert any deep learning framework model to another.
+Each deep learning framework has its own structure representation defined by its layers, parameters and syntax. This structure representation makes difficult to swap from one framework to another. The project tries to solve this problem in a straightforward manner, making it simple for the non-experienced users. The project fills this gap using an inner representation which is the bridge between all deep learning frameworks.
 
 General Usage
 -------------
