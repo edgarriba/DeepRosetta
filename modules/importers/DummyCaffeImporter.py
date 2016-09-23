@@ -12,3 +12,8 @@ class DummyCaffeImporter(BaseImporter):
         print 'Loading Caffe model: %s' % file_path
 
         return {}
+
+    def loadFromObject(self, frameworkObj):
+        print 'Loading Caffe model from object: %s' % frameworkObj
+
+        return {}

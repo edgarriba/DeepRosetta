@@ -13,12 +13,12 @@ General Usage
 -------------
 You can convert from one framework to another
 
-    import RosettaStone
-    
+    import DeepRosetta as dr
+
     if __name__ == '__main__':
-        rosetta = RosettaStone()
-        rosetta.convert('my.caffemodel', 'my.mat', 'CaffeImporter', 'MatConvnetExporter')
-        
+        rosetta = dr.RosettaStone()
+        rosetta.convert('my.caffemodel', 'your.caffemodel', 'DummyCaffeImporter', 'DummyCaffeExporter')
+
         print 'All went OK!'
   
 Supported formats
